@@ -7,13 +7,6 @@
 
 import UIKit
 
-//struct Package {
-//    let weight: Double // in kg
-//    let distance: Double // in km
-//}
-enum OfferCode: String {
-    case OFR001, OFR002, OFR003
-}
 class DeliveryCostViewController: UIViewController {
     @IBOutlet weak var weightTextField: UILabel!
     @IBOutlet weak var distanceTextfield: UILabel!
@@ -25,10 +18,12 @@ class DeliveryCostViewController: UIViewController {
     @IBOutlet weak var offerCodeLabel: UILabel!
     @IBOutlet weak var discountText: UILabel!
     @IBOutlet weak var totalCost: UILabel!
+    
     var distance = ""
     var weight = ""
     var offerCode = ""
     var discountString = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -98,17 +93,5 @@ class DeliveryCostViewController: UIViewController {
             }
        return dicountCost
     }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
